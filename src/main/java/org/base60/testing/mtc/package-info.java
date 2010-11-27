@@ -3,7 +3,7 @@
  * testing framework for concurrent applications.
  *
  * <p>
- * It provides a class {@link edu.umd.cs.mtc.MultithreadedTestCase}
+ * It provides a class {@link org.base60.testing.mtc.MultithreadedTestCase}
  * that makes it easy to define a test case that has multiple threads,
  * and tools to assist in evaluating the behavior of the
  * code under difference scenarios.
@@ -17,5 +17,5 @@
  * @author Nathaniel Ayewah
  * @since 1.0
  */
-package edu.umd.cs.mtc;
+package org.base60.testing.mtc;
 

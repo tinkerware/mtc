@@ -1,4 +1,4 @@
-package edu.umd.cs.mtc;
+package org.base60.testing.mtc;
 
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.model.FrameworkMethod;

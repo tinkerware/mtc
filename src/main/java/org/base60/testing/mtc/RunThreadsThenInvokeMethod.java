@@ -1,4 +1,4 @@
-package edu.umd.cs.mtc;
+package org.base60.testing.mtc;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

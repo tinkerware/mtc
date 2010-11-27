@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>edu.umd.cs.mtc</groupId>
-  <artifactId>multithreadedtc</artifactId>
-  <version>1.01-junit4</version>
+  <groupId>org.base60.extras</groupId>
+  <artifactId>mtc</artifactId>
+  <version>1.0</version>
   <name>MultithreadedTC</name>
-  <url>http://code.google.com/p/multithreadedtc-junit4/</url>
+  <url>https://github.com/cagatayk/mtc</url>
 
   <licenses>
     <license>
@@ -19,7 +19,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.6</version>
+      <version>4.8.2</version>
     </dependency>
   </dependencies>
 
@@ -28,8 +28,8 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
+          <source>1.6</source>
+          <target>1.6</target>
         </configuration>
       </plugin>
       <plugin>
