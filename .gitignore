@@ -7,6 +7,5 @@
 .project
 .classpath
 target
-.settings
 nbproject
 .DS_Store
