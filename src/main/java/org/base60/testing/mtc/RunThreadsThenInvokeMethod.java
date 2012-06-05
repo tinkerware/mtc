@@ -360,7 +360,8 @@ public class RunThreadsThenInvokeMethod extends InvokeMethod {
 	final java.lang.Thread mainThread = java.lang.Thread.currentThread();
 
 	java.lang.Thread t = new java.lang.Thread("Tick thread") {
-	    @Override
+        @Override
+        @SuppressWarnings("unused")
 	    public void run() {
 		try {
 		    long lastProgress = System.currentTimeMillis();
