@@ -1,10 +1,11 @@
 package sanity.basictests;
 
-import edu.umd.cs.mtc.Threaded;
-import edu.umd.cs.mtc.*;
+import org.base60.testing.mtc.MultithreadedTestCase;
+import org.base60.testing.mtc.Threaded;
 import org.junit.Test;
-import static org.junit.Assert.assertSame;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 
 /**
  * @author <a href="mailto:jvb@newtec.eu">Jan Van Besien</a>

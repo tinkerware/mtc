@@ -1,12 +1,11 @@
 package sanity.basictests;
 
-import edu.umd.cs.mtc.MultithreadedTestCase;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.junit.Test;
-import org.junit.Before;
+import org.base60.testing.mtc.MultithreadedTestCase;
 import org.junit.After;
+import org.junit.Test;
+
 import static org.junit.Assert.assertTrue;
 
 /**

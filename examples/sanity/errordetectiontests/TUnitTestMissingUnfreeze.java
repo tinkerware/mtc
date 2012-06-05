@@ -1,7 +1,7 @@
 package sanity.errordetectiontests;
 
-import edu.umd.cs.mtc.MultithreadedTestCase;
-import edu.umd.cs.mtc.Threaded;
+import org.base60.testing.mtc.MultithreadedTestCase;
+import org.base60.testing.mtc.Threaded;
 import org.junit.Test;
 
 /**

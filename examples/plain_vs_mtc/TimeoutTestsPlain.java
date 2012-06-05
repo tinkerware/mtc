@@ -3,11 +3,12 @@ package plain_vs_mtc;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.fail;
-import static org.junit.Assert.assertFalse;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.After;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.fail;
 
 /**
  * Timed offer times out if ArrayBlockingQueue is full and elements are not taken

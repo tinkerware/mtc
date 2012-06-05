@@ -1,14 +1,12 @@
 package plain_vs_mtc;
 
-import edu.umd.cs.mtc.MultithreadedTestCase;
-import edu.umd.cs.mtc.Threaded;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.junit.Test;
+
 import static junit.framework.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import org.junit.Before;
-import org.junit.Test;
-
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * compareAndSet in one thread enables another waiting for value to succeed

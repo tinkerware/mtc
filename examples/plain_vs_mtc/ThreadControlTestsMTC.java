@@ -1,13 +1,14 @@
 package plain_vs_mtc;
 
-import edu.umd.cs.mtc.MultithreadedTestCase;
-import edu.umd.cs.mtc.Threaded;
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.base60.testing.mtc.MultithreadedTestCase;
+import org.base60.testing.mtc.Threaded;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.concurrent.atomic.AtomicInteger;
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertTrue;
 
 /**
  * @author <a href="mailto:jvb@newtec.eu">Jan Van Besien</a>

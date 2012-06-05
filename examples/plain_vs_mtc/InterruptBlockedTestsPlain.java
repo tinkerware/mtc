@@ -2,10 +2,11 @@ package plain_vs_mtc;
 
 import java.util.concurrent.Semaphore;
 
-import static junit.framework.Assert.assertFalse;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.After;
+
+import static junit.framework.Assert.assertFalse;
 import static org.junit.Assert.fail;
 
 /**

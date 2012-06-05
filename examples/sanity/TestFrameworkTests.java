@@ -1,9 +1,11 @@
 package sanity;
 
-import edu.umd.cs.mtc.Threaded;
-import edu.umd.cs.mtc.*;
-import static org.junit.Assert.assertEquals;
+import org.base60.testing.mtc.MultithreadedTest;
+import org.base60.testing.mtc.MultithreadedTestCase;
+import org.base60.testing.mtc.Threaded;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class TestFrameworkTests extends MultithreadedTestCase
 {

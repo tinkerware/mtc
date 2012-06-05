@@ -1,13 +1,13 @@
 package plain_vs_mtc;
 
-import edu.umd.cs.mtc.MultithreadedTestCase;
-import edu.umd.cs.mtc.Threaded;
-
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
+import org.base60.testing.mtc.MultithreadedTestCase;
+import org.base60.testing.mtc.Threaded;
 import org.junit.Before;
 import org.junit.Test;
+
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.fail;
 

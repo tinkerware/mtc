@@ -1,14 +1,13 @@
 package sanity.errordetectiontests;
 
-import edu.umd.cs.mtc.MultithreadedTestCase;
-import edu.umd.cs.mtc.Threaded;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
-import junit.framework.Assert;
-import static junit.framework.Assert.assertTrue;
+import org.base60.testing.mtc.MultithreadedTestCase;
+import org.base60.testing.mtc.Threaded;
 import org.junit.Before;
 import org.junit.Test;
+
+import static junit.framework.Assert.assertTrue;
 
 /**
  * @author <a href="mailto:jvb@newtec.eu">Jan Van Besien</a>

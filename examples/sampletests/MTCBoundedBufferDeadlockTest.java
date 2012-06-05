@@ -1,13 +1,14 @@
 package sampletests;
 
-import edu.umd.cs.mtc.MultithreadedTestCase;
-import edu.umd.cs.mtc.Threaded;
-import static junit.framework.Assert.assertEquals;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.CountDownLatch;
+
+import org.base60.testing.mtc.MultithreadedTestCase;
+import org.base60.testing.mtc.Threaded;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.CountDownLatch;
+import static junit.framework.Assert.assertEquals;
 
 /**
  * Can we implement the Bounded Buffer using CountDownLatch? Nope, this causes a deadlock! But MTC can detect deadlocks. So we'll use the

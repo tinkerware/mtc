@@ -1,10 +1,9 @@
 package sanity.errordetectiontests;
 
-import edu.umd.cs.mtc.Threaded;
-import edu.umd.cs.mtc.*;
-
 import java.util.concurrent.locks.ReentrantLock;
 
+import org.base60.testing.mtc.MultithreadedTestCase;
+import org.base60.testing.mtc.Threaded;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.base60.extras</groupId>
   <artifactId>mtc</artifactId>
   <version>1.0</version>
   <name>MultithreadedTC</name>
-  <url>https://github.com/cagatayk/mtc</url>
+  <url>https://github.com/tinkerware/mtc</url>
 
   <licenses>
     <license>
@@ -18,13 +19,39 @@
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.8.2</version>
+      <artifactId>junit-dep</artifactId>
+      <version>4.10</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-all</artifactId>
+      <version>1.1</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.1</version>
+        <executions>
+          <execution>
+            <id>add-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>add-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>examples</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
@@ -86,7 +113,7 @@
         <artifactId>maven-checkstyle-plugin
         </artifactId>
         <configuration>
-          <!--<configLocation>XVSM_Checkstyle.xml</configLocation>-->
+          <!--<configLocation>XVSM_Checkstyle.xml</configLocation> -->
         </configuration>
       </plugin>
       <plugin>
@@ -102,7 +129,8 @@
           </docletArtifact>
           <additionalparam>
             -qualify -inferrel -quiet -hide java.*
-            -postfixpackage -nodefontsize 9
+            -postfixpackage
+            -nodefontsize 9
             -nodefontpackagesize 7
           </additionalparam>
           <destDir>docs/api</destDir>

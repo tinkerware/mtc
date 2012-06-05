@@ -1,16 +1,15 @@
 package sanity.basictests;
 
-import edu.umd.cs.mtc.Threaded;
-import edu.umd.cs.mtc.*;
-
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.atomic.AtomicInteger;
 
+import org.base60.testing.mtc.MultithreadedTestCase;
+import org.base60.testing.mtc.Threaded;
 import org.junit.Before;
-import org.junit.After;
 import org.junit.Test;
-import static org.junit.Assert.assertTrue;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Test order called is init, then thread, then finish

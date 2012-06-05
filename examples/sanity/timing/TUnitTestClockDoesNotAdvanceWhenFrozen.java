@@ -1,10 +1,11 @@
 package sanity.timing;
 
-import edu.umd.cs.mtc.Threaded;
-import edu.umd.cs.mtc.*;
-import static junit.framework.Assert.assertEquals;
+import org.base60.testing.mtc.MultithreadedTestCase;
+import org.base60.testing.mtc.Threaded;
 import org.junit.Before;
 import org.junit.Test;
+
+import static junit.framework.Assert.assertEquals;
 
 /**
  * @author <a href="mailto:jvb@newtec.eu">Jan Van Besien</a>
