@@ -1,5 +1,14 @@
 CHANGELOG
 
+base60.org MTC
+
+1.0 November, 2010
+- - Requires Java 6; uses JUnit 4.8.10.
+- - Moved under org.base60.testing.mtc package.
+- - Now builds with Maven.
+
+MultithreadedTC
+
 1.01 August 13, 2007
 - - Update to better support translation into JDK 1.4 compatible bytecode using Retrotranslator
 
